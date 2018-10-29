@@ -5,7 +5,7 @@ if(err){
    return console.log('unable to connect to mongodb');
 }
 console.log('connected to mongo');
-db.collection('Users').insertOne({
+db.collection('Todos').insertOne({
     text:'Something to do',
     completed: false
 },(err,result)=>{
